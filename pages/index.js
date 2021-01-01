@@ -1,14 +1,25 @@
 import { useState, useEffect } from "react"; 
 import  Game from '../pages/components/Game.js'
-import Center from '../pages/components/Center.js'
+import Center from "../pages/components/Center.js";
+import Stack from "../pages/components/Stack.js";
+import  Celebs from '../pages/components/Celeb';
+
+import Image from 'next/Image';
+
+// const [playStatus, setP] = useState(false);
+
+// const playing = () {
+//   if ()
+// }
+
 
 const Home = () => {
 
   return (
-    <Center>
-      <div className = "flex flex-col text-center items-center bg-blue-200">
-        Hello <Game />
-      </div>     
+    <Center bg-red-200>
+      <Stack>
+        <Game />
+      </Stack>     
     </Center>
   )
 }

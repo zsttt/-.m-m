@@ -1,25 +1,25 @@
-import { useState } from "react";
+import Celeb from '../components/Celeb'
+const { config } = require('./people');
+import Image from 'next/Image'
+import Celebs from './people'
+import QA from './QA'
 
 const Game = () => {
 
-    const [b, setB] = useState(true);
-
-    const inc_b = () => {
-        setB(!b);
-    };
-
-    let dispB
-    if(b == true) {
-        dispB = "yuh is true";
-    }
-    else {
-        dispB = "fglejilfe";
-    }
 
 
     return (
-        <div
-            onClick={inc_b}>b: {dispB}
+        <div>
+          
+
+         <h1 className = "text-2xl font-sans font-bold bg-blue-700">Do you think you know how old people are?</h1>
+        <span flex flex-row></span>
+        <QA flex flex-row/>
+
+            
+              
+
+
         </div>
     )
 

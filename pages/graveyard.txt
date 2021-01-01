@@ -1,0 +1,32 @@
+    const Celbob = p => <Celeb name={p.name}  age={p.age} img={p.img}/>
+
+    const onlyP = p => p.name == "Tom Brady"
+
+    const phoebe = Celebs.filter(onlyP)
+
+    const format = Celebs.map(Celbob)
+
+    const sumtogether = (x,y) => x+y.age
+    const total = phoebe.reduce(sumtogether,0)
+
+
+    const [b, setB] = useState(true);
+    const [question, setQ] = useState(0);
+
+  
+
+    const inc_b = () => {
+        setB(!b);
+    };
+
+    let dispB;
+    let holla;
+
+    if(b == true) {
+        dispB = console.log({format});
+        holla = 1
+    }
+    else {
+        dispB = console.log(2);
+        holla=2
+    }
